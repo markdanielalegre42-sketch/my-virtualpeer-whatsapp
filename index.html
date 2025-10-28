@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Chat Button</title>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+      background-color: #20b958;
+    }
+
+    .whatsapp-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .whatsapp-text {
+      color: white;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        padding: 8px 14px;
+        font-size: 14px;
+        bottom: 15px;
+        right: 15px;
+      }
+      .whatsapp-icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="https://wa.me/639478085756?text=Hi!%20I%20want%20to%20inquire%20about%20your%20Virtual%20Assistant%20services." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat" class="whatsapp-icon">
+    <span class="whatsapp-text">Chat with us</span>
+  </a>
+</body>
+</html>
